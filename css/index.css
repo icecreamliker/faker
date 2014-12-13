@@ -253,19 +253,25 @@ i[class^=i-]:before {
     border-bottom: 1px solid #d9dde2;
 }
 
+.page .section-login .delimiter-wp {
+    background-color: #fff;
+    padding: 0 20px;
+}
 .page .section-login .delimiter {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     border-bottom: 1px solid #d9dde2;
 }
 
 
 .page .section-login input {
     display: block;
-    padding: 0;
+    padding: 0 20px;
     width: 100%;
     height: 44px;
+    line-height: 44px;
     border: 0;
+    color: #444;
 }
 
 .page .section-login .submit-wp {
