@@ -240,11 +240,11 @@ i[class^=i-]:before {
 }
 
 .page .section-login {
-    background-color: #fff;
 }
 
 .page .section-login .input-wp {
     padding: 0 20px;
+    background-color: #fff;
 }
 
 .page .section-login .input-wp:first-child {
