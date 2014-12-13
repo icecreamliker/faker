@@ -294,7 +294,7 @@ i[class^=i-]:before {
     -webkit-appearance: none;
 }
 
-.page .section-login .submit:hover {
+.page .section-login .submit:active {
     background-color: #e86b0f;
 }
 
