@@ -54,8 +54,8 @@ $('.section-category .title li').on('tap', function() {
     var index = $(this).index();
     var unit = 33.33;
 
-    $('#J_slider').animate({
+    $('#J_slider').css({
         left: (unit * index + '%')
-    }, 200)
+    })
 })
 

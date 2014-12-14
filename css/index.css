@@ -368,6 +368,9 @@ i[class^=i-]:before {
     bottom: 0;
     width: 33.33%;
     border-bottom: 2px solid #ff4304;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -webkit-transform-style: preserve-3d;
 }
 
 .page .section-category .title li {
@@ -381,12 +384,64 @@ i[class^=i-]:before {
 }
 
 .page .section-category .sub-con li {
-    height: 89px;
+    position: relative;
+    padding: 10px;
+    height: 69px;
     border-bottom: 1px solid #d9dde2;
 }
 
 .page .section-category .sub-con li:last-child {
     border-bottom: none!important;
+}
+
+.page .section-category .sub-con img {
+    display: block;
+    float: left;
+    width: 89px;
+    height:65px;
+}
+
+.page .section-category .sub-con .desc {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 107px;
+}
+
+.page .section-category .sub-con .desc .name {
+    position: relative;
+    font-size: 15px;
+    color: #323232;
+    height: 23px;
+    line-height: 23px;
+}
+
+.page .section-category .sub-con .desc .name .mark-group {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    background-color: #f51b0a;
+    width: 18px;
+    height: 22px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.page .section-category .sub-con .desc .comment {
+    color: #333;
+    font-size: 12px;
+    line-height: 20px;
+    height: 20px;
+}
+
+.page .section-category .sub-con .desc .intro {
+    color: #999;
+    font-size: 12px;
+    line-height: 20px;
+    height: 20px;
 }
 
 .page.ft {
