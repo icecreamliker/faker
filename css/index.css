@@ -346,15 +346,15 @@ i[class^=i-]:before {
     bottom: 0;
     height: 50px;
     z-index: 99;
-    background-color: #fefefe;
-    border-top: 1px solid #d9dde2;
+    background-color: #fbfbfb;
+    border-top: 1px solid #f0f0f0;
     overflow: hidden;
 }
 
 .page.ft .section-gallery {
     height: 50px;
     font-size: 12px;
-    background-color: #fefefe;
+    background-color: #fbfbfb;
     border-bottom: none;
 }
 
