@@ -47,3 +47,15 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+$('.section-category .title li').on('tap', function() {
+    $('.section-category .title li').removeClass('selected');
+    $(this).addClass('selected');
+    var index = $(this).index();
+    var unit = 33.33;
+
+    $('#J_slider').css({
+        left: (unit * index + '%')
+    })
+})
+
