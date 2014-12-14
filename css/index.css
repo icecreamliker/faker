@@ -211,19 +211,8 @@ i[class^=i-]:before {
     right: 0;
     bottom: 50px;
     z-index: 9;
-    overflow: auto;
-}
-
-.page.ft {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 50px;
-    z-index: 99;
-    background-color: #fff;
-    border-top: 1px solid #f6f6f6;
-    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .page .section-nav {
@@ -348,6 +337,42 @@ i[class^=i-]:before {
     height: 53px;
     background: url(../img/logo.png) 0 0 no-repeat;
     background-size: 153px 53px;
+}
+
+.page.ft {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    z-index: 99;
+    background-color: #fefefe;
+    border-top: 1px solid #f6f6f6;
+    overflow: hidden;
+}
+
+.page.ft .section-gallery {
+    height: 50px;
+    font-size: 12px;
+    background-color: #fefefe;
+    border-bottom: none;
+}
+
+.page.ft .section-gallery li a i {
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    color: #444;
+}
+
+.page.ft .section-gallery li a i[class^=i-]:before {
+    left: 1px;
+    top: 3px;
+    color: #444;
+}
+
+.page.ft .section-gallery li a .subtitle {
+    margin-top: 1px;
 }
 
 
