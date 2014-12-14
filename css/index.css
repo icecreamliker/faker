@@ -347,7 +347,7 @@ i[class^=i-]:before {
     height: 50px;
     z-index: 99;
     background-color: #fefefe;
-    border-top: 1px solid #f6f6f6;
+    border-top: 1px solid #d9dde2;
     overflow: hidden;
 }
 
@@ -373,6 +373,14 @@ i[class^=i-]:before {
 
 .page.ft .section-gallery li a .subtitle {
     margin-top: 1px;
+}
+
+.page.ft .section-gallery li.selected a i[class^=i-]:before {
+    color: #ff8400;
+}
+
+.page.ft .section-gallery li.selected a .subtitle {
+    color: #ff8400;
 }
 
 
