@@ -347,7 +347,7 @@ i[class^=i-]:before {
     height: 50px;
     z-index: 99;
     background-color: #fbfbfb;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #aaa;
     overflow: hidden;
 }
 
