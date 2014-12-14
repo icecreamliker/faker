@@ -38,6 +38,14 @@ input {
     outline: 0;
 }
 
+.hide {
+    display: hide;
+}
+
+.show {
+    display: block;
+}
+
 .clearfix::after {
     content: '';
     display: block;
@@ -341,7 +349,6 @@ i[class^=i-]:before {
 
 .page .section-category {
     margin-top: 10px;
-    height: 200px;
     background-color: #fff;
     border-top: 1px solid #d9dde2;
     border-bottom: 1px solid #d9dde2;
@@ -373,6 +380,11 @@ i[class^=i-]:before {
 
 .page .section-category .title li.selected {
     color: #ff4304;
+}
+
+.page .section-category .sub-con li {
+    height: 89px;
+    border-bottom: 1px solid #d9dde2;
 }
 
 .page.ft {
@@ -447,6 +459,10 @@ i[class^=i-]:before {
     }
 
     .page .section-category .title {
+        border-bottom: 0.5px solid #d9dde2;
+    }
+
+    .page .section-category .sub-con li {
         border-bottom: 0.5px solid #d9dde2;
     }
 }
