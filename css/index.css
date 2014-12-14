@@ -139,6 +139,23 @@ i[class^=i-]:before {
     content: "\e614";
 }
 
+.star {
+    display: inline-block;
+    width: 66px;
+    height: 12px;
+    vertical-align: middle;
+    background: url(../img/remark.png) no-repeat;
+    background-size: 86px auto;
+}
+.star.star-0 {background-position:0 -334px}
+.star.star-10 {background-position:0 -317px}
+.star.star-20 {background-position:0 -300px}
+.star.star-30 {background-position:0 -283px}
+.star.star-35 {background-position:0 -266px}
+.star.star-40 {background-position:0 -249px}
+.star.star-45 {background-position:0 -232px}
+.star.star-50 {background-position:0 -215px}
+
 .page .section-gallery {
     background-color: #fff;
     border-bottom: 1px solid #d9dde2;
@@ -417,7 +434,8 @@ i[class^=i-]:before {
     line-height: 23px;
 }
 
-.page .section-category .sub-con .desc .name .mark-group {
+.page .section-category .sub-con .desc .name .mark-group,
+.page .section-category .sub-con .desc .name .mark-cu {
     position: relative;
     top: -2px;
     display: inline-block;
@@ -430,11 +448,19 @@ i[class^=i-]:before {
     border-radius: 2px;
 }
 
+.page .section-category .sub-con .desc .name .mark-cu {
+    background-color: #f60;
+}
+
 .page .section-category .sub-con .desc .comment {
     color: #333;
     font-size: 12px;
     line-height: 20px;
     height: 20px;
+}
+
+.page .section-category .sub-con .desc .comment span {
+    vertical-align: middle;
 }
 
 .page .section-category .sub-con .desc .intro {

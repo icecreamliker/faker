@@ -57,5 +57,8 @@ $('.section-category .title li').on('tap', function() {
     $('#J_slider').css({
         left: (unit * index + '%')
     })
+
+    $('.section-category .sub-con').hide();
+    $('.section-category .sub-con').eq(index).show();
 })
 
