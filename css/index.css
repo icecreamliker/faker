@@ -194,6 +194,38 @@ i[class^=i-]:before {
     margin-bottom: 8px;
 }
 
+.page.hd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 99;
+    overflow: hidden;
+}
+
+.page.bd {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    z-index: 9;
+    overflow: auto;
+}
+
+.page.ft {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    z-index: 99;
+    background-color: #fff;
+    border-top: 1px solid #f6f6f6;
+    overflow: hidden;
+}
+
 .page .section-nav {
     position: relative;
     height: 50px;
@@ -205,13 +237,17 @@ i[class^=i-]:before {
 
 .page .section-nav .logo {
     display: inline-block;
-    width: 80px;
-    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 86px;
+    height: 30px;
+    background: url(../img/logo_white.png) 0 0 no-repeat;
+    background-size: 86px 30px;
 }
 
 .page .section-nav .input-wp {
     position: absolute;
-    left: 80px;
+    left: 110px;
     right: 30px;
     top: 10px;
 }
@@ -240,6 +276,7 @@ i[class^=i-]:before {
 }
 
 .page .section-login {
+    padding-top: 40px;
 }
 
 .page .section-login .input-wp {
@@ -248,7 +285,6 @@ i[class^=i-]:before {
 }
 
 .page .section-login .input-wp:first-child {
-    margin-top: 40px;
     border-top: 1px solid #d9dde2;
 }
 
@@ -302,6 +338,17 @@ i[class^=i-]:before {
     background-color: #e86b0f;
 }
 
+.page .section-login-logo {
+    padding-top: 100px;
+}
+
+.page .section-login-logo .logo {
+    margin: 0 auto;
+    width: 153px;
+    height: 53px;
+    background: url(../img/logo.png) 0 0 no-repeat;
+    background-size: 153px 53px;
+}
 
 
 
