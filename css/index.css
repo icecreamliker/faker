@@ -133,7 +133,7 @@ i[class^=i-]:before {
 
 .page .section-gallery {
     background-color: #fff;
-    border-bottom: 1px solid #d9dde2;
+    border-bottom: 0.5px solid #d9dde2;
 }
 
 .page .section-gallery li {
@@ -274,12 +274,12 @@ i[class^=i-]:before {
 }
 
 .page .section-login .input-wp:first-child {
-    border-top: 1px solid #d9dde2;
+    border-top: 0.5px solid #d9dde2;
 }
 
 .page .section-login .input-wp:nth-child(3) {
     margin-bottom: 40px;
-    border-bottom: 1px solid #d9dde2;
+    border-bottom: 0.5px solid #d9dde2;
 }
 
 .page .section-login .delimiter-wp {
@@ -289,7 +289,7 @@ i[class^=i-]:before {
 .page .section-login .delimiter {
     margin: 0 auto;
     width: 100%;
-    border-bottom: 1px solid #d9dde2;
+    border-bottom: 0.5px solid #d9dde2;
 }
 
 
@@ -339,6 +339,12 @@ i[class^=i-]:before {
     background-size: 153px 53px;
 }
 
+.page .section-category {
+    margin-top: 10px;
+    height: 200px;
+    background-color: #fff;
+}
+
 .page.ft {
     position: absolute;
     left: 0;
@@ -347,7 +353,7 @@ i[class^=i-]:before {
     height: 50px;
     z-index: 99;
     background-color: #fbfbfb;
-    border-top: 1px solid #aaa;
+    border-top: 0.5px solid #aaa;
     overflow: hidden;
 }
 
