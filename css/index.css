@@ -370,6 +370,7 @@ i[class^=i-]:before {
     border-bottom: 2px solid #ff4304;
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
+    -webkit-transform-style: preserve-3d;
 }
 
 .page .section-category .title li {
