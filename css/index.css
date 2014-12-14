@@ -387,6 +387,10 @@ i[class^=i-]:before {
     border-bottom: 1px solid #d9dde2;
 }
 
+.page .section-category .sub-con li:last-child {
+    border-bottom: none!important;
+}
+
 .page.ft {
     position: absolute;
     left: 0;
