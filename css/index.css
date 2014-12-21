@@ -525,6 +525,9 @@ i[class^=i-]:before {
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
+
+    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
 }
 
 .section-carousel .carousel-wp .item {

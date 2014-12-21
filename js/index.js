@@ -122,14 +122,11 @@ $('.section-carousel').on('touchend', function(e) {
         if (offset[0] > width / 2) {
             // index +1
             index += 1;
-            console.debug(index)
         } else if (offset[0] <= width / 2 && offset[0] >= -width / 2) {
             // index stays
-            console.debug(index)
         } else {
             // index -1
             index -= 1;
-            console.debug(index)
         }
     }
 
