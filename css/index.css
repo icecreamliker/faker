@@ -517,6 +517,7 @@ i[class^=i-]:before {
 /* section-carousel */
 .section-carousel {
     overflow: hidden;
+    position: relative;
 }
 
 .section-carousel .carousel-wp {
@@ -547,6 +548,30 @@ i[class^=i-]:before {
     width: 100%;
 }
 
+.section-carousel .section-indicator {
+    position: absolute;
+    bottom: 10px;
+    width: 80px;
+    left: 50%;
+    margin-left: -40px;
+}
+
+.section-carousel .section-indicator span {
+    display: inline-block;
+    margin-right: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.section-carousel .section-indicator span.selected {
+    background-color: #ff8400;
+}
+
+.section-carousel .section-indicator span:last-child {
+    margin-right: 0;
+}
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .page .section-gallery {

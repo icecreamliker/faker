@@ -72,7 +72,8 @@ var x1 = 0,
     t1 = 0,
     t2 = 0,
     carousel = $('.carousel-wp'),
-    touchTimeout = null;
+    touchTimeout = null,
+    indicators = $('.section-indicator span');
 width = $('.section-carousel').width();
 
 // init
@@ -164,4 +165,6 @@ carousel.on('webkitTransitionEnd transitionend', function(e) {
             '-webkit-transform': 'translate(' + currentOffset + 'px, 0px) translateZ(0px)'
         });
     }
+    indicators.removeClass('selected');
+    indicators.eq(-index).addClass('selected');
 })
