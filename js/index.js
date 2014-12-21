@@ -62,3 +62,109 @@ $('.section-category .title li').on('tap', function() {
     $('.section-category .sub-con').eq(index).show();
 })
 
+var x1 = 0,
+    y1 = 0,
+    x2 = 0,
+    y2 = 0,
+    offset = [0, 0],
+    currentOffset = 0,
+    index = 0,
+    t1 = 0,
+    t2 = 0,
+    carousel = $('.carousel-wp'),
+    touchTimeout = null;
+width = $('.section-carousel').width();
+
+// init
+carousel.css({
+    '-webkit-transform': 'translate(-' + width + 'px, 0px) translateZ(0px)'
+});
+currentOffset = -width;
+
+$('.section-carousel').on('touchstart', function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    var touch = e.touches[0];
+    x1 = touch.pageX;
+    y1 = touch.pageY;
+    t1 = (new Date()).getTime();
+})
+
+$('.section-carousel').on('touchmove', function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    var touch = e.touches[0];
+    x2 = touch.pageX;
+    y2 = touch.pageY;
+    offset = [x2 - x1, y2 - y1];
+    var deltaX = (currentOffset + offset[0]);
+    carousel.css({
+        '-webkit-transform': 'translate(' + deltaX + 'px, 0px) translateZ(0px)'
+    });
+
+})
+
+$('.section-carousel').on('touchend', function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+
+    t2 = (new Date()).getTime();
+
+    if ((t2 - t1) < 200) {
+        if (offset[0] > 0) {
+            index += 1;
+        } else if (offset[0] == 0) {
+
+        } else {
+            index -= 1;
+        }
+    } else {
+        if (offset[0] > width / 2) {
+            // index +1
+            index += 1;
+            console.debug(index)
+        } else if (offset[0] <= width / 2 && offset[0] >= -width / 2) {
+            // index stays
+            console.debug(index)
+        } else {
+            // index -1
+            index -= 1;
+            console.debug(index)
+        }
+    }
+
+
+
+    currentOffset = (index - 1) * width;
+
+
+
+    carousel.css({
+        '-webkit-transform': 'translate(' + currentOffset + 'px, 0px) translateZ(0px)',
+        '-webkit-transition': '300ms',
+        'transition': '300ms'
+    });
+})
+
+carousel.on('webkitTransitionEnd transitionend', function(e) {
+    carousel.css({
+        '-webkit-transition': '0ms',
+        'transition': '0ms'
+    });
+    if (index == 1) {
+        // go back
+        index = -3;
+        currentOffset = (index - 1) * width;
+        carousel.css({
+            '-webkit-transform': 'translate(' + currentOffset + 'px, 0px) translateZ(0px)'
+        });
+    }
+    if (index == -4) {
+        // go forward
+        index = 0;
+        currentOffset = (index - 1) * width;
+        carousel.css({
+            '-webkit-transform': 'translate(' + currentOffset + 'px, 0px) translateZ(0px)'
+        });
+    }
+})

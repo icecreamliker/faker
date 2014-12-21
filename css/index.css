@@ -514,6 +514,36 @@ i[class^=i-]:before {
     color: #ff8400;
 }
 
+/* section-carousel */
+.section-carousel {
+    overflow: hidden;
+}
+
+.section-carousel .carousel-wp {
+    width: 600%;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.section-carousel .carousel-wp .item {
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.section-carousel a {
+    display: block;
+    width: 100%;
+}
+
+.section-carousel a img {
+    display: block;
+    width: 100%;
+}
+
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .page .section-gallery {
