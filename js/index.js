@@ -83,7 +83,7 @@ carousel.css({
 currentOffset = -width;
 
 $('.section-carousel').on('touchstart', function(e) {
-    //e.preventDefault();
+    // e.preventDefault();
     var touch = e.touches[0];
     x1 = touch.pageX;
     y1 = touch.pageY;
@@ -103,7 +103,7 @@ $('.section-carousel').on('touchmove', function(e) {
 
 })
 
-$('.section-carousel').on('touchend', function(e) {
+$('.section-carousel').on('touchend touchcancel', function(e) {
     //e.preventDefault();
 
     t2 = (new Date()).getTime();
