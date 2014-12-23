@@ -52,10 +52,10 @@ $('.section-category .title li').on('tap', function() {
     $('.section-category .title li').removeClass('selected');
     $(this).addClass('selected');
     var index = $(this).index();
-    var unit = 33.33;
+    var unit = 100;
 
     $('#J_slider').css({
-        left: (unit * index + '%')
+        '-webkit-transform': 'translate(' + unit * index + '%, 0px) translateZ(0px)'
     })
 
     $('.section-category .sub-con').hide();

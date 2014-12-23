@@ -385,9 +385,8 @@ i[class^=i-]:before {
     bottom: 0;
     width: 33.33%;
     border-bottom: 2px solid #ff4304;
-    transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 300ms;
+    transition: 300ms;
 }
 
 .page .section-category .title li {
