@@ -83,8 +83,7 @@ carousel.css({
 currentOffset = -width;
 
 $('.section-carousel').on('touchstart', function(e) {
-    e.stopPropagation();
-    e.preventDefault();
+    //e.preventDefault();
     var touch = e.touches[0];
     x1 = touch.pageX;
     y1 = touch.pageY;
@@ -92,7 +91,6 @@ $('.section-carousel').on('touchstart', function(e) {
 })
 
 $('.section-carousel').on('touchmove', function(e) {
-    e.stopPropagation();
     e.preventDefault();
     var touch = e.touches[0];
     x2 = touch.pageX;
@@ -106,17 +104,14 @@ $('.section-carousel').on('touchmove', function(e) {
 })
 
 $('.section-carousel').on('touchend', function(e) {
-    e.stopPropagation();
-    e.preventDefault();
+    //e.preventDefault();
 
     t2 = (new Date()).getTime();
 
     if ((t2 - t1) < 200) {
         if (offset[0] > 0) {
             index += 1;
-        } else if (offset[0] == 0) {
-
-        } else {
+        } else if (offset[0] == 0) {} else {
             index -= 1;
         }
     } else {
@@ -135,7 +130,7 @@ $('.section-carousel').on('touchend', function(e) {
 
     currentOffset = (index - 1) * width;
 
-
+    offset = [0, 0];
 
     carousel.css({
         '-webkit-transform': 'translate(' + currentOffset + 'px, 0px) translateZ(0px)',
